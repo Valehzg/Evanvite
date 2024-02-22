@@ -139,21 +139,6 @@ font-family: Helvetica ;
   display: inline-block;
 }
 
-.recuadro {
-  display: flex;
-  margin-top: 70px;
-}
-
-
-.publi {
-  flex: 1;
-  text-align: center;
-  margin: 200px 120px 0 120px;
-  font-size: 3em;
-  font-family: Helvetica;
-}
-
-
 .login-container {
   display: flex;
   flex-direction: column;

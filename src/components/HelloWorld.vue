@@ -17,14 +17,6 @@
     <div class="prin">
       <img src="./../assets/imagen1.png" alt="imagen principal">
     </div>
-   <div class="recuadro">
-    <div>
-      <img src="./../assets/publi.png" alt="imagen principal">
-    </div>
-  </div>
-    <div class="publi">
-      Eknbkañfkmbñlkdfmñ
-    </div>
   </div>
 </template>
 
