@@ -16,7 +16,7 @@ body {
   min-width: 320px;
   font-family: Arial;
   color: #000;
-  background-color: #afc3db;
+ background-color: #ffffff;
 }
 
 #app {
@@ -74,15 +74,14 @@ nav li {
 }
 
 .logo {
-  text-align: left;
-  display: inline-block;
-  
+  text-align: center;
 }
 
 .logo img {
-  width: 600px;
+  width: 40%;
   height: auto;
   margin: 80px 30px 30px 60px;
+  text-align: center;
 }
 
 .container {
@@ -100,7 +99,7 @@ nav li {
 }
 
 .container img {
-  max-width: 800px;
+  max-width: 90%;
   height: auto;
   margin: 10px 0 10px 0;
 }
@@ -111,32 +110,19 @@ font-size: xx-large;
 font-family: Helvetica ;
 }
 
-.eslogan h1 {
+h1 {
   margin-bottom: 10px;
   font-size: xx-large;
   font-family: 'Gill Sans' ;
   margin-left: 100px;
   margin-top: -20px;
   font-family:'Times New Roman';
- 
-
-}
-
-.prin {
-  display: inline-block;
-  vertical-align: top;
-  max-width: 500px;
-  margin: 15px 0 30px 60px ;
 }
 
 .vision img, .vision2 img{
   margin: 30px;
   max-width: 600px;
   font-family:system-ui 'Helvetica Neue' ;
-}
-
-.fondo {
-  display: inline-block;
 }
 
 .login-container {

@@ -6,7 +6,7 @@ import navbar from './../components/reutilisables/navbar.vue'
     <navbar />
     <!--div>
         <div class="imagen-fondo">
-            <img src="./../assets/fondo1.png" />
+
         </div>
         <router-view />
     </div-->
