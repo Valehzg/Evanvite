@@ -3,10 +3,11 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
 // Importa tus componentes
-import Hello from './components/HelloWorld.vue';  
+import Hello from './components/HelloWorld.vue';
 import about from './components/about.vue';
 import ubicacion from './components/ubicacion.vue';
 import registrate from './components/login.vue';
+import comprar from './components/comprar.vue';
 // Importa otros componentes según sea necesario
 
 const routes = [
@@ -14,7 +15,7 @@ const routes = [
     path: '/',
     component: Hello,
     meta: { title: 'inicio' },
-  },  
+  },
   {
     path: '/about',
     component: about,
@@ -31,6 +32,11 @@ const routes = [
     path: '/registrate',
     component: registrate,
     meta: { title: 'registrate' },
+  },
+  {
+    path: '/comprar',
+    component: comprar,
+    meta: { title: 'vestido moño' },
   },
   // Agrega más rutas según sea necesario
 ];

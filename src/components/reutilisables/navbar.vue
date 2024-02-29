@@ -3,7 +3,9 @@
         <nav>
             <div class="nav-container">
                 <div class="imagen-fondo">
-                    <img src="./../../assets/evan.png" alt="Logotipo de tu tienda">
+                    <router-link :to="'/'">
+                        <img src="./../../assets/evan.png" alt="Logotipo de tu tienda">
+                    </router-link>
                 </div>
                 <ul>
                     <router-link to="/">Inicio</router-link>
@@ -11,13 +13,21 @@
                     <router-link to="/ubicacion">Ubicacion</router-link>
                     <router-link to="/registrate">Registrate</router-link>
                     <li>
-                        <input type="text" placeholder="Buscar" id="search-input">
+                        <input type="text" placeholder="Buscar" id="search-input" @change="goToDress">
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
 </template>
+
+<script setup>
+import { useRouter } from 'vue-router';
+const router = useRouter();
+const goToDress = () => {
+    router.push('/comprar');
+}
+</script>
 
 <style>
 .imagen-fondo{

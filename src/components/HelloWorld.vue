@@ -3,7 +3,7 @@
     <div class="flex-grow w-full grid grid-cols-3">
       <div class="col-span-1 min-heigth"> <!-- Columna izquierda -->
         <img :src="juanita" alt="tienda1" class="template-img">
-      </div>  
+      </div>
       <div class="flex flex-col col-span-1">
         <div class="flex-grow"> <!-- Primera fila de la columna del medio -->
           <img :src="panchita" alt="tienda1" class="template-img">
@@ -28,13 +28,15 @@
 
     <div class=" titu">
       <p class="bodoni-moda-fuente">P   r   o   d   u   c   t   o    s</p>
-      
+
     </div>
 		<!-- Cuadricula con los productos [imagen,descipccion precio] -->
 		<div class="product-list-container w-full">
       <div class="grid grid-cols-4 gap-4 px-40">
         <div v-for="item in cantidadDeImagenes">
-          <img :src="conjuntoDeImagenes[item-1]" alt="ropa1" class="imagenes-catalogo">
+          <router-link :to="'/comprar'">
+            <img :src="conjuntoDeImagenes[item-1]" alt="ropa1" class="imagenes-catalogo">
+          </router-link>
 					<p>{{conjuntoDeDescripcion[item-1]}}</p>
 					<p>{{conjuntoDePrecios[item-1]}}</p>
         </div>
@@ -100,8 +102,7 @@ const conjuntoDePrecios = ['$4999','$4800','$3700','$3500','$3540','$3900','$300
   text-align: center;
   font-size: 100px;
   padding: 80px 0 ;
- 
+
 }
 
 </style>
-
