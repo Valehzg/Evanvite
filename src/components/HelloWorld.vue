@@ -3,7 +3,7 @@
     <div class="flex-grow w-full grid grid-cols-3">
       <div class="col-span-1 min-heigth"> <!-- Columna izquierda -->
         <img :src="juanita" alt="tienda1" class="template-img">
-      </div>
+      </div>  
       <div class="flex flex-col col-span-1">
         <div class="flex-grow"> <!-- Primera fila de la columna del medio -->
           <img :src="panchita" alt="tienda1" class="template-img">
@@ -18,16 +18,17 @@
 		</div>
 
 		<!-- Parte inferior con el eslogan -->
-		<div class="bg-purple-500 w-full flex justify-center py-4">
+		<div class="w-full flex justify-center py-4">
 			<div class="eslogan">
-				<h1>
+				<p class="bodoni-moda-fuente">
 					Viste con actitud, destaca con elegancia.
-				</h1>
+				</p>
 			</div>
 		</div>
 
-    <div>
-      Productos
+    <div class=" titu">
+      <p class="bodoni-moda-fuente">P   r   o   d   u   c   t   o    s</p>
+      
     </div>
 		<!-- Cuadricula con los productos [imagen,descipccion precio] -->
 		<div class="product-list-container w-full">
@@ -42,12 +43,12 @@
 </template>
 
 <script setup>
-import imagen1 from './../assets/prin1.png';
 import juanita from './../assets/prin1.png';
 import panchita from './../assets/prin2.png';
 import jesen from './../assets/prin3.png';
 import valeria from './../assets/prin4.png';
 import vestidouno from './../assets/vestido1.jpg';
+import vestidodos from './../assets/vestido.jpg';
 import rosauna from './../assets/rosa1.jpg';
 import rosados from './../assets/rosa2.jpg';
 import rosatres from './../assets/rosa4.jpg';
@@ -58,9 +59,9 @@ import azultres from './../assets/azul3.jpg';
 
 
 const cantidadDeImagenes = 8;
-const conjuntoDeImagenes = [vestidouno,prendauno,rosauna,azuluno,azuldos,rosatres,azultres,rosados];
-const conjuntoDeDescripcion = ['Sueter','Pantalon','Camisa','Chamarra','Vestido','Blusa','Short','Falda','Zapatos','Bufanda'];
-const conjuntoDePrecios = ['$200','$300','$400','$500','$600','$700','$800','$900','$1000','$1100'];
+const conjuntoDeImagenes = [vestidouno,vestidodos,rosauna,azuluno,azuldos,rosatres,azultres,rosados];
+const conjuntoDeDescripcion = ['Vestido Rosa','Vestido Moño','Blazer Caramelo','Blazer Algodon','Bolso Azul','Bolso Moño','Tacones Azul','Tacones Rosa','Zapatos','Bufanda'];
+const conjuntoDePrecios = ['$4999','$4800','$3700','$3500','$3540','$3900','$3000','$2900','$3000','$2900'];
 </script>
 
 <style scoped>
@@ -84,6 +85,22 @@ const conjuntoDePrecios = ['$200','$300','$400','$500','$600','$700','$800','$90
   height: 100%;
   object-fit: cover;
   opacity: 0.8;
+}
+
+.titu {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
+  padding: 50px 0;
+
+}
+
+.eslogan{
+  text-align: center;
+  font-size: 100px;
+  padding: 80px 0 ;
+ 
 }
 
 </style>
