@@ -1,19 +1,19 @@
 <template>
     <!-- Parte central con grid de tres columnas, la del medio dividida en dos filas -->
     <div class="flex-grow w-full grid grid-cols-3">
-      <div class="bg-red-500 col-span-1 min-heigth"> <!-- Columna izquierda -->
+      <div class="col-span-1 min-heigth"> <!-- Columna izquierda -->
         <img :src="juanita" alt="tienda1" class="template-img">
       </div>
       <div class="flex flex-col col-span-1">
-        <div class="bg-green-500 flex-grow"> <!-- Primera fila de la columna del medio -->
-        seccion 2.1
+        <div class="flex-grow"> <!-- Primera fila de la columna del medio -->
+          <img :src="panchita" alt="tienda1" class="template-img">
         </div>
-        <div class="bg-yellow-500 flex-grow"> <!-- Segunda fila de la columna del medio -->
-              seccion 2.2
+        <div class="flex-grow"> <!-- Segunda fila de la columna del medio -->
+          <img :src="jesen" alt="tienda1" class="template-img">
         </div>
       </div>
-      <div class="bg-blue-500 col-span-1"> <!-- Columna derecha -->
-            seccion 3
+      <div class="col-span-1"> <!-- Columna derecha -->
+        <img :src="valeria" alt="tienda1" class="template-img">
       </div>
 		</div>
 
@@ -25,6 +25,10 @@
 				</h1>
 			</div>
 		</div>
+
+    <div>
+      Productos
+    </div>
 		<!-- Cuadricula con los productos [imagen,descipccion precio] -->
 		<div class="product-list-container w-full">
       <div class="grid grid-cols-4 gap-4 px-40">
@@ -38,11 +42,23 @@
 </template>
 
 <script setup>
-import imagen1 from './../assets/imagen1.png';
-import juanita from './../assets/tienda1.png';
+import imagen1 from './../assets/prin1.png';
+import juanita from './../assets/prin1.png';
+import panchita from './../assets/prin2.png';
+import jesen from './../assets/prin3.png';
+import valeria from './../assets/prin4.png';
+import vestidouno from './../assets/vestido1.jpg';
+import rosauna from './../assets/rosa1.jpg';
+import rosados from './../assets/rosa2.jpg';
+import rosatres from './../assets/rosa4.jpg';
+import azuluno from './../assets/azul1.jpg';
+import azuldos from './../assets/azul2.jpg';
+import azultres from './../assets/azul3.jpg';
+
+
 
 const cantidadDeImagenes = 8;
-const conjuntoDeImagenes = [imagen1,imagen1,imagen1,juanita,juanita,imagen1,imagen1,imagen1];
+const conjuntoDeImagenes = [vestidouno,prendauno,rosauna,azuluno,azuldos,rosatres,azultres,rosados];
 const conjuntoDeDescripcion = ['Sueter','Pantalon','Camisa','Chamarra','Vestido','Blusa','Short','Falda','Zapatos','Bufanda'];
 const conjuntoDePrecios = ['$200','$300','$400','$500','$600','$700','$800','$900','$1000','$1100'];
 </script>
@@ -50,7 +66,7 @@ const conjuntoDePrecios = ['$200','$300','$400','$500','$600','$700','$800','$90
 <style scoped>
 .imagenes-catalogo{
   width: 100%;
-  height: 250px;
+  height: 350px;
   object-fit: cover;
 }
 .product-list-container{
@@ -63,4 +79,12 @@ const conjuntoDePrecios = ['$200','$300','$400','$500','$600','$700','$800','$90
 	min-height: 85vh;
 }
 
+.template-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
 </style>
+
